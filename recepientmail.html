@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Details of Your Order</h1>
+        <p>Thank you for ordering with us. Please verify your order details below:</p>
+        <div class="details">
+            <p><strong>Receiver Name:</strong> <?php echo $name; ?></p>
+            <p><strong>Phone Number:</strong> <?php echo $phone; ?></p>
+            <p><strong>Address:</strong> <?php echo $address; ?></p>
+        </div>
+        <p>Your order will be delivered within 7 working days.</p>
+        <p>Regards,</p>
+        <p>Order Manager</p>
+    </div>
+</body>
+</html>
